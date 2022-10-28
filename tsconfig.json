@@ -20,7 +20,7 @@
       "@component/*": ["src/components/*"],
       "@config/*": ["src/configs/*"],
       "@context/*": ["src/contexts/*"],
-      "@data/*": ["src/datas/*"],
+      "@data/*": ["src/data/*"],
       "@hook/*": ["src/hooks/*"],
       "@service/*": ["src/services/*"],
       "@util/*": ["src/utils/*"]
