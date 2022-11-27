@@ -1,4 +1,11 @@
-import { mauve, mauveDark, red, redDark } from "@radix-ui/colors";
+import {
+  mauve,
+  mauveDark,
+  red,
+  redDark,
+  indigo,
+  indigoDark
+} from "@radix-ui/colors";
 
 export default {
   mauve: {
@@ -59,6 +66,36 @@ export default {
       1000: red.red3,
       1100: red.red2,
       1200: red.red1
+    }
+  },
+  indigo: {
+    dark: {
+      100: indigoDark.indigo12,
+      200: indigoDark.indigo11,
+      300: indigoDark.indigo10,
+      400: indigoDark.indigo9,
+      500: indigoDark.indigo8,
+      600: indigoDark.indigo7,
+      700: indigoDark.indigo6,
+      800: indigoDark.indigo5,
+      900: indigoDark.indigo4,
+      1000: indigoDark.indigo3,
+      1100: indigoDark.indigo2,
+      1200: indigoDark.indigo1
+    },
+    light: {
+      100: indigo.indigo12,
+      200: indigo.indigo11,
+      300: indigo.indigo10,
+      400: indigo.indigo9,
+      500: indigo.indigo8,
+      600: indigo.indigo7,
+      700: indigo.indigo6,
+      800: indigo.indigo5,
+      900: indigo.indigo4,
+      1000: indigo.indigo3,
+      1100: indigo.indigo2,
+      1200: indigo.indigo1
     }
   }
 };
