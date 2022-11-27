@@ -1,7 +1,9 @@
 export default {
   Container: { variants: { fluid: { height: "100%" } } },
   Button: {
-    _focus: { outline: "none" },
+    baseStyle: {
+      _focus: { outline: "none" }
+    },
     variants: {
       reset: {
         colorScheme: "transparent",
@@ -17,8 +19,10 @@ export default {
     }
   },
   Link: {
-    textDecoration: "none",
-    _hover: { textDecoration: "none" },
-    _focus: { outline: "none" }
+    baseStyle: {
+      textDecoration: "none",
+      _hover: { textDecoration: "none" },
+      _focus: { outline: "none" }
+    }
   }
 };
