@@ -3,6 +3,8 @@ import {
   mauveDark,
   red,
   redDark,
+  orange,
+  orangeDark,
   indigo,
   indigoDark
 } from "@radix-ui/colors";
@@ -66,6 +68,36 @@ export default {
       1000: red.red3,
       1100: red.red2,
       1200: red.red1
+    }
+  },
+  orange: {
+    dark: {
+      100: orangeDark.orange12,
+      200: orangeDark.orange11,
+      300: orangeDark.orange10,
+      400: orangeDark.orange9,
+      500: orangeDark.orange8,
+      600: orangeDark.orange7,
+      700: orangeDark.orange6,
+      800: orangeDark.orange5,
+      900: orangeDark.orange4,
+      1000: orangeDark.orange3,
+      1100: orangeDark.orange2,
+      1200: orangeDark.orange1
+    },
+    light: {
+      100: orange.orange12,
+      200: orange.orange11,
+      300: orange.orange10,
+      400: orange.orange9,
+      500: orange.orange8,
+      600: orange.orange7,
+      700: orange.orange6,
+      800: orange.orange5,
+      900: orange.orange4,
+      1000: orange.orange3,
+      1100: orange.orange2,
+      1200: orange.orange1
     }
   },
   indigo: {
