@@ -9,14 +9,12 @@ import {
   Heading,
   Stack,
   Text,
-  useColorMode,
   useColorModeValue
 } from "@chakra-ui/react";
 import Base from "@component/containers/home/base";
+import NextLink from "next/link";
 
 const Page: NextPage = function () {
-  const { toggleColorMode } = useColorMode();
-
   const heading = useColorModeValue("mauve.dark.900", "mauve.dark.100");
   const text = useColorModeValue("mauve.dark.400", "mauve.dark.200");
   const strong = useColorModeValue("mauve.light.20", "mauve.dark.100");
@@ -54,28 +52,30 @@ const Page: NextPage = function () {
             story, essay or poem. Write dreams, it&#39;s <strong>easy</strong>
           </Text>
         </Stack>
-        <Button
-          border="1px solid"
-          borderColor={button.border}
-          bgColor={button.background}
-          color={button.color}
-          fontWeight="normal"
-          fontSize="14px"
-          onClick={toggleColorMode}
-          leftIcon={<Monitor size={18} />}
-          _hover={{
-            borderColor: button.hover.border,
-            bgColor: button.hover.background,
-            color: button.hover.color
-          }}
-          _active={{
-            borderColor: button.active.border,
-            bgColor: button.active.background,
-            color: button.active.color
-          }}
-        >
-          Show my workspace
-        </Button>
+        <NextLink href="/me/note/slug" passHref legacyBehavior>
+          <Button
+            border="1px solid"
+            borderColor={button.border}
+            bgColor={button.background}
+            color={button.color}
+            fontWeight="normal"
+            fontSize="14px"
+            leftIcon={<Monitor size={18} />}
+            _hover={{
+              borderColor: button.hover.border,
+              bgColor: button.hover.background,
+              color: button.hover.color
+            }}
+            _active={{
+              borderColor: button.active.border,
+              bgColor: button.active.background,
+              color: button.active.color
+            }}
+            as="a"
+          >
+            Show my workspace
+          </Button>
+        </NextLink>
       </Stack>
     </Base>
   );
